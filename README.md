@@ -1,4 +1,4 @@
-# 👁️ Ocular Disease AI Healthcare Assistant
+#  Diabetic Retinopathy and Retinal Disease Detection System
 
 A **production-ready, full-stack AI system** for early detection of ocular diseases, utilizing a **Dual-Model Architecture**. It features two distinct Hybrid CNN + Vision Transformer (ViT) models:
 1. **Specialized DR Model:** Trained on the **APTOS 2019 dataset** for fine-grained 5-class Diabetic Retinopathy grading.
@@ -8,11 +8,13 @@ Built with **Grad-CAM** explainability, **Gemini AI** natural-language explanati
 
 ---
 
-## 🧠 Full Pipeline
+## Full Pipeline
 
 ```text
 User/Doctor → Streamlit UI → FastAPI → CNN+ViT Model(s) → Grad-CAM → Gemini LLM → Voice Output → UI
 ```
+<img width="1024" height="447" alt="architecture" src="https://github.com/user-attachments/assets/5cf348c8-c720-45d3-87b6-a3385ba1b708" />
+
 
 ---
 
@@ -46,23 +48,23 @@ project/
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
-| 🔬 **Dual-Dataset AI** | **APTOS 2019** (5-class DR) and **ODIR-5K** (8-class Multi-Disease) trained models |
-| 🔥 **Grad-CAM** | Interactive heatmap overlay showing affected retinal regions (click regions for detailed explanation) |
-| 🧠 **AI Explanation** | Gemini API medical explanations with child-friendly "ELI5" mode |
-| 📈 **Progression Tracking** | Compare past and present scans with AI-generated progression summaries |
-| 🤖 **AI Chat** | Ask follow-up questions to the AI Doctor based on your scan results |
-| 🔊 **Voice I/O** | pyttsx3 offline TTS and SpeechRecognition STT capabilities |
-| 🔐 **Role-Based Portals** | Dedicated interfaces for Patients and Doctors with persistent SQLite storage |
-| 📋 **Reports** | Downloadable PDF and CSV prediction history reports |
-| 🎨 **Premium UI** | Dark theme, glassmorphism, animated UI, and confidence meters |
+|  **Dual-Dataset AI** | **APTOS 2019** (5-class DR) and **ODIR-5K** (8-class Multi-Disease) trained models |
+|  **Grad-CAM** | Interactive heatmap overlay showing affected retinal regions (click regions for detailed explanation) |
+| **AI Explanation** | Gemini API medical explanations with child-friendly "ELI5" mode |
+| **Progression Tracking** | Compare past and present scans with AI-generated progression summaries |
+| **AI Chat** | Ask follow-up questions to the AI Doctor based on your scan results |
+| **Voice I/O** | pyttsx3 offline TTS and SpeechRecognition STT capabilities |
+| **Role-Based Portals** | Dedicated interfaces for Patients and Doctors with persistent SQLite storage |
+| **Reports** | Downloadable PDF and CSV prediction history reports |
+| **Premium UI** | Dark theme, glassmorphism, animated UI, and confidence meters |
 
 ---
 
-## 🚀 Running From Scratch
+## steps to Run the project
 
 ### 1. Install Dependencies
 
@@ -82,12 +84,12 @@ uvicorn api.main:app --reload --port 8000
 streamlit run app/ui.py
 ```
 
-> ℹ️ Open http://localhost:8501 in your browser.  
+> Open http://localhost:8501 in your browser.  
 > You can sign up as a Patient or Doctor from the login screen.
 
 ---
 
-## 🔑 Gemini API Key (Optional)
+## Gemini API Key (Optional)
 
 To enable AI-powered explanations, Q&A chat, and progression summaries:
 1. Get a free key at https://aistudio.google.com/app/apikey
@@ -97,7 +99,7 @@ To enable AI-powered explanations, Q&A chat, and progression summaries:
 
 ---
 
-## 🩺 Supported Ocular Diseases
+##  Supported Ocular Diseases
 
 | Disease | Description | Action |
 |---|---|---|
@@ -109,4 +111,4 @@ To enable AI-powered explanations, Q&A chat, and progression summaries:
 
 ---
 
-> ⚠️ **Disclaimer**: This system is for research and educational purposes. It does not replace professional medical diagnosis.
+>  **Disclaimer**: This system is for research and educational purposes. It does not replace professional medical diagnosis.
